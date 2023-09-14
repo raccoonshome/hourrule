@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { StyledButton, MoreBtn } from './button.style';
-import {Modal, Title, Content} from './modal.style';
+import Modal from './modal';
 
 
 const Button = (props) =>{
@@ -10,19 +10,14 @@ const WhiteBtn = (props) =>{
     return <MoreBtn onClick={props.onClick}>{props.children}</MoreBtn>
 }
 
-const ModalBtn = (props) => {
+const ModalBtn = ({value, contents}) => {
     const [modal, setModal] = useState(false);
     const handleOpenModal = () => setModal(true);
     const handleCloseModal = () => setModal(false);
-    return <><StyledButton onClick={handleOpenModal}>{props.children}</StyledButton>
-    {modal && <>
-        <Modal>
-            <Title>화이팅!!♥♥♥</Title>
-            <Content>당신의 꿈을 응원합니다!</Content>
-            <Button onClick={handleCloseModal}>종료하고 진짜 훈련하러 가기 GO!GO!</Button>
-        </Modal>
-        </>
-    }
+    
+    return <>
+    <StyledButton onClick={handleOpenModal}>{value}</StyledButton>
+    {modal && <Modal onClick={handleCloseModal}>{contents}</Modal>}
     </>
 }
 

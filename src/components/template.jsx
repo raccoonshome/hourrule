@@ -3,6 +3,16 @@ import Input from './input';
 import {Button, WhiteBtn, ModalBtn} from './button';
 import {DefaultSection, StyledTemplate, DivButtons, Mega} from './section.style'
 
+const modalList = [
+  {
+  id: 1,
+  title: `화이팅!!♥♥♥`,
+  content: `당신의 꿈을 응원합니다!`,
+  img: `licat.png`,
+  close: `종료하고 진짜 훈련하러 가기 GO!GO!`,
+  },
+];
+
 const T = (texts, children) => {
   return <StyledTemplate>{texts[0]}{children}{texts[1]}</StyledTemplate>
 };
@@ -29,7 +39,7 @@ const HourSection = () =>{
         {T`당신은 ${<Mega>{goal}</Mega>} 전문가가 되기 위해서`}
         {T`대략 ${<Mega>{time}</Mega>} 일 이상 훈련하셔야 됩니다. :)`}
         <DivButtons>
-          <ModalBtn>훈련하러 가기 GO!GO!</ModalBtn>
+          <ModalBtn value={`훈련하러 가기 GO!GO!`} contents={modalList[0]} />
           <WhiteBtn onClick={handleClickReset}>다시 계산하기</WhiteBtn>
         </DivButtons>
       </>

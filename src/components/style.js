@@ -11,6 +11,6 @@ const Yellow = `#F5DF4D`;
 
 const Violet = `#5B2386`;
 
-const Margin = `8vh`;
+const Margin = `40px`;
 
 export { FontStyle, White, Yellow, Violet, Margin };

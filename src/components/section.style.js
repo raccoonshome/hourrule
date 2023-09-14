@@ -16,7 +16,7 @@ const Strong = styled.strong`
 `;
 
 const Mega = styled(Strong)`
-  font-size: 72px;
+  font-size: 48px;
 `;
 
 const StyledTemplate = styled.p`
@@ -35,7 +35,7 @@ const DivButtons = styled.div`
   display: flex;
   justify-content: center;
   gap: 18px;
-  & img {
+  & > img {
     transform: translate(-10px, 20px);
   }
 `;

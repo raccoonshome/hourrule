@@ -20,5 +20,6 @@ const StyledHeader = styled.header`
         max-width: 70%;
         object-fit: contain;
         aspect-ratio: 1/1;
+        object-position: 50% 55%;
     }
 `;
