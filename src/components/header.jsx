@@ -7,8 +7,8 @@ const Header = () =>{
     return <StyledHeader>
             <h1>1만 시간의 법칙</h1>
             <H1>
-                <Img src='main.png'/>
-                <Logo src='time.png'/>
+                <Img src='main.png' alt='1만 시간의 법칙'/>
+                <Logo src='time.png' alt='logo'/>
             </H1>
             <FontStyles.Italic>“연습은 어제의 당신보다 당신을 더 낫게 만든다.”</FontStyles.Italic>
             <Quotes>
