@@ -5,7 +5,7 @@ const Wrap = styled.div`
   position: fixed;
   inset: 0;
   margin: auto;
-  width: 50vh;
+  max-width: 50vh;
   height: fit-content;
   background-color: ${styles.White};
   border-radius: 30px;
