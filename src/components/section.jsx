@@ -1,7 +1,8 @@
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 import Input from './input';
+import {FontStyles} from './style';
 import {Button, WhiteBtn, ModalBtn} from './button';
-import {DefaultSection, StyledTemplate, DivButtons, Mega} from './section.style'
+import {DefaultSection, StyledTemplate, DivButtons} from './section.style'
 
 const modalList = [
   {
@@ -35,8 +36,8 @@ const HourSection = () =>{
   return <DefaultSection>
     {moreBtn ? 
       <>
-        {T`당신은 ${<Mega>{goal}</Mega>} 전문가가 되기 위해서`}
-        {T`대략 ${<Mega>{time}</Mega>} 일 이상 훈련하셔야 됩니다. :)`}
+        {T`당신은 ${<FontStyles.Mega>{goal}</FontStyles.Mega>} 전문가가 되기 위해서`}
+        {T`대략 ${<FontStyles.Mega>{time}</FontStyles.Mega>} 일 이상 훈련하셔야 됩니다. :)`}
         <DivButtons>
           <ModalBtn value={`훈련하러 가기 GO!GO!`} contents={modalList[0]} />
           <WhiteBtn onClick={handleClickReset}>다시 계산하기</WhiteBtn>
@@ -44,10 +45,10 @@ const HourSection = () =>{
       </>
       :
       <>
-        {T`나는 ${<><span></span><Input placeholder={`예)프로그래밍`} type={`text`} getText={setGoal}/><span></span></>} 전문가가 될 것이다.`}
-        {T`그래서 앞으로 매일 하루에 ${<><span></span><Input placeholder={`예) 5`} type={`number`} getText={setTime}/><span></span></>} 시간씩 훈련할 것이다.`}
+        {T`나는 ${<><FontStyles.Br/><Input placeholder={`예)프로그래밍`} type={`text`} getText={setGoal}/><FontStyles.Br/></>} 전문가가 될 것이다.`}
+        {T`그래서 앞으로 매일 하루에 ${<><FontStyles.Br/><Input placeholder={`예) 5`} type={`number`} getText={setTime}/><FontStyles.Br/></>} 시간씩 훈련할 것이다.`}
         <DivButtons>
-          <Button onClick={handleClick}>나는 며칠 동안 훈련을 해야 1만 시간이 될까?</Button>
+          <Button onClick={handleClick}>나는 며칠 동안 훈련을 해야<FontStyles.Br/> 1만 시간이 될까?</Button>
           <img src="pointer.svg"/>
         </DivButtons>
       </>
