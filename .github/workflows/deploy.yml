@@ -28,5 +28,5 @@ jobs:
         cache: 'npm'
     - run: npm install
     - run: npm install serve
+    - run: npm run build
     - run: npx serve -s build
-    - run: npm run deploy
