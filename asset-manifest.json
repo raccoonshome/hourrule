@@ -1,0 +1,12 @@
+{
+  "files": {
+    "main.js": "/hourrule/static/js/main.d8fb154b.js",
+    "static/js/787.08915ed3.chunk.js": "/hourrule/static/js/787.08915ed3.chunk.js",
+    "index.html": "/hourrule/index.html",
+    "main.d8fb154b.js.map": "/hourrule/static/js/main.d8fb154b.js.map",
+    "787.08915ed3.chunk.js.map": "/hourrule/static/js/787.08915ed3.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.d8fb154b.js"
+  ]
+}
