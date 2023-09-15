@@ -10,6 +10,7 @@ const modalList = [
   title: `화이팅!!♥♥♥`,
   content: `당신의 꿈을 응원합니다!`,
   img: `licat.png`,
+  alt: `라이캣`,
   close: `종료하고 진짜 훈련하러 가기 GO!GO!`,
   },
 ];

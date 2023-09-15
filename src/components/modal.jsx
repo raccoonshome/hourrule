@@ -7,7 +7,7 @@ const Modal = ({children, onClick}) => {
     return <Wrap>
         <Title>{children.title}</Title>
         {children.content && <Content>{children.content}</Content>}
-        {children.img && <Img src={children.img}/>}
+        {children.img && <Img src={children.img} alt={children.alt ?? ``}/>}
         <Button onClick={onClick}>{children.close}</Button>
     </Wrap>
 }
