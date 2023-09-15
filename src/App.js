@@ -1,6 +1,5 @@
 import styled, { createGlobalStyle } from "styled-components";
 import Header from "./components/header.jsx";
-import Section from "./components/section.jsx";
 import Footer from "./components/footer.jsx";
 import HourSection from "./components/template.jsx";
 import reset from "styled-reset";
@@ -8,9 +7,7 @@ import reset from "styled-reset";
 const GlobalStyle = createGlobalStyle`
   ${reset}
 
-  h1{
-    font-size: 0.1px;
-  }
+ 
   *{
     color: white;
     text-align: center;
@@ -24,6 +21,17 @@ const GlobalStyle = createGlobalStyle`
     align-items: center;
     line-height: 1.4;
   }
+  
+  h1 {
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+  }
 `;
 
 function App() {
@@ -31,7 +39,6 @@ function App() {
     <>
       <GlobalStyle />
       <Header />
-      <Section />
       <HourSection />
       <Footer />
     </>

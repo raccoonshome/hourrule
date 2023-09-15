@@ -17,14 +17,13 @@ const T = (texts, children) => {
   return <StyledTemplate>{texts[0]}{children}{texts[1]}</StyledTemplate>
 };
 
-
 const HourSection = () =>{
   const [moreBtn, setMoreBtn] = useState(false);
   const [goal, setGoal] = useState('');
   const [time, setTime] = useState('');
   const handleClick = () => {
     setMoreBtn(true);
-    setTime(Math.ceil(10000/time/24));
+    setTime(Math.ceil(10000/time));
   };
 
   const handleClickReset = () => {
