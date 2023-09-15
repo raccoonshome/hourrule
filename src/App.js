@@ -1,7 +1,7 @@
 import styled, { createGlobalStyle } from "styled-components";
 import Header from "./components/header.jsx";
 import Footer from "./components/footer.jsx";
-import HourSection from "./components/template.jsx";
+import HourSection from "./components/section.jsx";
 import reset from "styled-reset";
 
 const GlobalStyle = createGlobalStyle`
