@@ -1,13 +1,10 @@
 import React, { useState } from 'react';
-import { StyledButton, MoreBtn } from './button.style';
+import StyledButton from './button.style';
 import Modal from './modal';
 
 
 const Button = (props) =>{
     return <StyledButton onClick={props.onClick}>{props.children}</StyledButton>
-}
-const WhiteBtn = (props) =>{
-    return <MoreBtn onClick={props.onClick}>{props.children}</MoreBtn>
 }
 
 const ModalBtn = ({value, contents}) => {
@@ -21,5 +18,5 @@ const ModalBtn = ({value, contents}) => {
     </>
 }
 
-export { Button, WhiteBtn, ModalBtn };
+export { Button, ModalBtn };
 

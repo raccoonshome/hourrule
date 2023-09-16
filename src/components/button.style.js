@@ -5,7 +5,7 @@ const StyledButton = styled.button`
   padding: 21px 49px;
   border-radius: 56px;
   border: none;
-  background: ${Colors.Yellow};
+  background: ${(props) => (props.main ? Colors.Yellow : Colors.White)};
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
   color: ${Colors.Violet};
   ${FontStyles.FontStyle};
@@ -18,8 +18,4 @@ const StyledButton = styled.button`
   }
 `;
 
-const MoreBtn = styled(StyledButton)`
-  background: ${Colors.White};
-`;
-
-export { StyledButton, MoreBtn };
+export default StyledButton;
