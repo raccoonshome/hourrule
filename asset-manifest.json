@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.js": "/hourrule/static/js/main.42257839.js",
+    "main.js": "/hourrule/static/js/main.451e7f1f.js",
     "static/js/787.08915ed3.chunk.js": "/hourrule/static/js/787.08915ed3.chunk.js",
     "index.html": "/hourrule/index.html",
-    "main.42257839.js.map": "/hourrule/static/js/main.42257839.js.map",
+    "main.451e7f1f.js.map": "/hourrule/static/js/main.451e7f1f.js.map",
     "787.08915ed3.chunk.js.map": "/hourrule/static/js/787.08915ed3.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.42257839.js"
+    "static/js/main.451e7f1f.js"
   ]
 }
