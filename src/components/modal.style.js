@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { Colors } from "./style";
 
-const Wrap = styled.div`
+const Wrap = styled.dialog`
   position: fixed;
   inset: 0;
   margin: auto;

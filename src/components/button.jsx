@@ -4,7 +4,7 @@ import Modal from './modal';
 
 
 const Button = (props) =>{
-    return <StyledButton variant={props.variant} onClick={props.onClick}>{props.children}</StyledButton>
+    return <StyledButton variant={props.variant} onSubmit={props.onSubmit}>{props.children}</StyledButton>
 }
 
 const ModalBtn = ({value, contents, variant}) => {
@@ -13,7 +13,7 @@ const ModalBtn = ({value, contents, variant}) => {
     const handleCloseModal = () => setModal(false);
     
     return <>
-    <StyledButton variant={variant} onClick={handleOpenModal}>{value}</StyledButton>
+    <StyledButton variant={variant} onSubmit={handleOpenModal}>{value}</StyledButton>
     {modal && <Modal onClick={handleCloseModal}>{contents}</Modal>}
     </>
 }
