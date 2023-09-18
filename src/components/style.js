@@ -5,13 +5,13 @@ const GlobalStyle = createGlobalStyle`
   ${reset}
   @font-face {
     font-family: 'GmarketSansMedium';
-    src: url('./fonts/GmarketSansTTFMedium.ttf') format('woff');
+    src: url('${process.env.PUBLIC_URL}/fonts/GmarketSansTTFMedium.ttf') format('woff');
     font-weight: 400;
     font-style: normal;
   }
   @font-face {
     font-family: 'OTEnjoystoriesBA';
-    src: url('./fonts/tvN 즐거운이야기 Medium.ttf') format('woff');
+    src: url('${process.env.PUBLIC_URL}/fonts/tvN 즐거운이야기 Medium.ttf') format('woff');
     font-weight: normal;
     font-style: normal;
   }

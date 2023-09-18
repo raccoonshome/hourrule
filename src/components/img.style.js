@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const Img = styled.img`
+const Image = styled.img`
   display: block;
   max-width: calc(100% / 2);
   margin: auto;
@@ -8,12 +8,14 @@ const Img = styled.img`
   object-position: center;
 `;
 
+const Img = ({ src, alt, style }) => {
+  return (
+    <Image
+      src={`${process.env.PUBLIC_URL}/${src}`}
+      alt={alt ?? ""}
+      style={style}
+    />
+  );
+};
+
 export default Img;
-
-const Logo = styled(Img)`
-  position: absolute;
-  inset: 0;
-  max-width: calc(100% / 4);
-`;
-
-export { Logo };

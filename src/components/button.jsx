@@ -4,16 +4,16 @@ import Modal from './modal';
 
 
 const Button = (props) =>{
-    return <StyledButton onClick={props.onClick}>{props.children}</StyledButton>
+    return <StyledButton variant={props.variant} onClick={props.onClick}>{props.children}</StyledButton>
 }
 
-const ModalBtn = ({value, contents}) => {
+const ModalBtn = ({value, contents, variant}) => {
     const [modal, setModal] = useState(false);
     const handleOpenModal = () => setModal(true);
     const handleCloseModal = () => setModal(false);
     
     return <>
-    <StyledButton onClick={handleOpenModal}>{value}</StyledButton>
+    <StyledButton variant={variant} onClick={handleOpenModal}>{value}</StyledButton>
     {modal && <Modal onClick={handleCloseModal}>{contents}</Modal>}
     </>
 }
