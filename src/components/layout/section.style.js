@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Fonts, Margin } from "./style";
+import { Fonts, Margin } from "../style";
 
 const DefaultSection = styled.section`
   margin: ${Margin} auto;

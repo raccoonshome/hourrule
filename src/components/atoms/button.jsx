@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import StyledButton from './button.style';
-import Modal from './modal';
+import Modal from '../modal/modal';
 
 
 const Button = (props) =>{

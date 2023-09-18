@@ -1,6 +1,6 @@
 import React from   'react';
 import styled from 'styled-components';
-import Img from './img.style';
+import Img from '../atoms/img.style';
 
 const Footer = () =>{
     return <footer>

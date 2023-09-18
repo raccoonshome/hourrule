@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Margin } from "./style";
+import { Margin } from "../style";
 const StyledHeader = styled.header`
   max-width: 1200px;
   padding: 5vh;

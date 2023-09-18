@@ -1,6 +1,6 @@
 import React from   'react';
-import Img from './img.style';
-import {FontStyles} from './style';
+import Img from '../atoms/img.style';
+import {FontStyles} from '../style';
 import {StyledHeader, H1, Quotes} from './header.style';
 const Header = () =>{
     return <StyledHeader>

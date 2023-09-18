@@ -1,7 +1,7 @@
 import React from "react";
 import { Wrap, Title, Content } from './modal.style';
-import { Button } from "./button";
-import Img from "./img.style";
+import { Button } from "../atoms/button";
+import Img from "../atoms/img.style";
 
 const Modal = ({children, onClick}) => {
     return <Wrap>

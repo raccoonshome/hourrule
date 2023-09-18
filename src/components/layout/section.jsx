@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import Input from './input';
-import {FontStyles} from './style';
-import {Button, ModalBtn} from './button';
+import Input from '../atoms/input';
+import {FontStyles} from '../style';
+import {Button, ModalBtn} from '../atoms/button';
 import {DefaultSection, StyledTemplate, DivButtons} from './section.style'
 
 const modalList = [

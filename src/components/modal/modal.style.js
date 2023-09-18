@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Colors } from "./style";
+import { Colors } from "../style";
 
 const Wrap = styled.dialog`
   position: fixed;
